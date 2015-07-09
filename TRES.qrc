@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Tres/wsd.png</file>
+        <file>Tres/cl.png</file>
+        <file>Tres/Gear Red.png</file>
+        <file>Tres/Gear.ico</file>
+        <file>Tres/gear.png</file>
+        <file>Tres/flfd.jpg</file>
+        <file>Tres/flfd.png</file>
+    </qresource>
+</RCC>

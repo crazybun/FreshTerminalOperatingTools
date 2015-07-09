@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ComParaSetting</class>
+ <widget class="QWidget" name="ComParaSetting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000000</width>
+    <height>1000000</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>通信参数设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="TRES.qrc">
+    <normaloff>:/new/prefix1/Tres/Gear.ico</normaloff>:/new/prefix1/Tres/Gear.ico</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QGroupBox" name="serialGrpBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>651</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>41</y>
+      <width>48</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>串口号：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="sBCbx">
+    <property name="geometry">
+     <rect>
+      <x>532</x>
+      <y>41</y>
+      <width>44</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>1位</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2位</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="cSBCbx">
+    <property name="geometry">
+     <rect>
+      <x>318</x>
+      <y>41</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>无校验</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>偶校验</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>奇校验</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="serNumCbx">
+    <property name="geometry">
+     <rect>
+      <x>67</x>
+      <y>41</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>264</x>
+      <y>41</y>
+      <width>48</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>校验位：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>478</x>
+      <y>41</y>
+      <width>48</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>停止位：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>142</x>
+      <y>41</y>
+      <width>48</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>波特率：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="BuadNumCbx">
+    <property name="geometry">
+     <rect>
+      <x>196</x>
+      <y>41</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>1200</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4800</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>9600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>19200</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>38400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>115200</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>386</x>
+      <y>41</y>
+      <width>48</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>数据位：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="dataBitCbx">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>41</y>
+      <width>32</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>8</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QRadioButton" name="serialRdBttn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>89</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>串口</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="clientGrpBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>651</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>30</y>
+      <width>60</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>服务器IP：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="serverIPLed">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>30</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="inputMask">
+     <string>000.000.000.000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>30</y>
+      <width>36</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>端口：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cSPortLed">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>30</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>122</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="serverURLLed">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="orgFrameDTime">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="inputMask">
+        <string>0000000000000</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>86</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>服务器URL：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>原帧调试时间：</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QRadioButton" name="clientRdBttn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>89</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>客户端</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="serverRdbttn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>89</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>服务器</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="serverGrpBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>651</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLineEdit" name="sPortLed">
+    <property name="geometry">
+     <rect>
+      <x>53</x>
+      <y>31</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>120</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>31</y>
+      <width>36</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>端口：</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>391</y>
+     <width>48</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>通信协议</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="inPCbx">
+   <property name="geometry">
+    <rect>
+     <x>76</x>
+     <y>391</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>TCP</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>UDP</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>HTTP</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="cancelBttn">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>453</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sureBttn">
+   <property name="geometry">
+    <rect>
+     <x>181</x>
+     <y>453</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+  <zorder>label_5</zorder>
+  <zorder>inPCbx</zorder>
+  <zorder>cancelBttn</zorder>
+  <zorder>sureBttn</zorder>
+  <zorder>serialGrpBox</zorder>
+  <zorder>serialRdBttn</zorder>
+  <zorder>clientGrpBox</zorder>
+  <zorder>clientRdBttn</zorder>
+  <zorder>serverRdbttn</zorder>
+  <zorder>serverGrpBox</zorder>
+ </widget>
+ <resources>
+  <include location="TRES.qrc"/>
+ </resources>
+ <connections/>
+</ui>

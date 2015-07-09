@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EnterWidget</class>
+ <widget class="QWidget" name="EnterWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>142</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Agency FB</family>
+    <pointsize>10</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>终端操作工具</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame{image:url(:/new/prefix1/Tres/wsd.png)}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-30</y>
+     <width>411</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image:url(:/new/prefix1/Tres/wsd.png)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
